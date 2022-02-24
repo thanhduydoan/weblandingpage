@@ -317,16 +317,14 @@ figcaption{
 /* -------------------------------- */
 .abc{
     display: grid;
-    grid-template-columns: 300px 200px;
-    grid-template-rows: 150px 150px;
-    gap: 60px;
-    grid-template-areas: "icon information2 information2";
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr 2fr;
 }
 
 .form-input{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-areas: "col span-1-of-3 col span-2-of-3 col span-2-of-3";
+    grid-template-columns: 1fr 2fr;
 }
 .contact-section{
    background-image: linear-gradient(45deg,rgba(2,33,64,0.8) 55%,rgba(45,95,93,0.85)), url(../img/background5.jpeg);
@@ -370,14 +368,13 @@ figcaption{
 }
 /* ----------FORM------------ */
 form{
+    width: 50%;
+    margin-left: 40%;
     padding: 20px;
-    height: 350px;
-    width: 500px;
-    margin-left: 170%;
     background-color: rgba(0, 0, 0, 0.4);
 }
 label{
-    font-size: 150%;
+    font-size: 100%;
     color: white;
 }
 input, textarea{
@@ -387,26 +384,43 @@ input, textarea{
     border: 1px solid rgba(70, 68, 68, 0.7);
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 30px;
 }
 input{
     height: 40px;
-
 }
 textarea{
     resize: none;
+    height: 100px;
 }
-form .information2:last-child{
+form .form-input:last-child{
     text-align: center;
+}
+input[type=submit]{
+    font-weight: 700;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 150px;
+    text-align: center;
+    padding-top: 7px;
+}
+form .form-input{
+    margin-bottom: 20px;
 }
 .form-input{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-.btn{
-    text-align: center;
-    padding-top: 10px;
-    margin-left: 150px;
-    margin-top: 40px;
+input[type=text], input[type=email], textarea{
+    transition: all .3s;
+    width: 80%;
+    font-size: 100%;
 }
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    color: white;
+    background-color: rgba(48, 47, 47, 0.8);
+}
+
 /* -------------------------- */
 /* --------FOOTER------------ */
 /* -------------------------- */
