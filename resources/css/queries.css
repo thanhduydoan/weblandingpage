@@ -1,20 +1,163 @@
 /* Big tablet to 1200px; */
-@media only screen  and (max-width:1200px){
-  
+@media only screen and (max-width:1200px){
+  html{
+      font-size: 16px;
+  }
+  .heading-main-box{
+      transform: translate(-35%, 50%);
+  }
+  form{
+      margin-left: 30%;
+  }
+
 }
  
 /* Small tablet to big tablet from 768x to 1023px */
 @media only screen and (max-width:1023px){
-     
+   .logo{
+       width: 300px;
+       margin-left: 40px;
+   }  
+   .main-nav{
+    margin-top: 40px;
+    margin-right: 15px;
+   }
+   .main-nav li{
+    margin-right: 10px;
+   }
+   .heading-main-box{
+       transform: translate(-20%, -50%);
+   }
+   .product-section .btn{
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 50px;
+   }
+   .product-box{
+       width: 95%;
+   }
+   h3{
+       font-size: 90%;
+   }
+   .product-box ul li{
+    margin-left: 5%;
+}
+.product-box .small-icon{
+    margin-right: 5px;
+}
+.product-box .btn{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+form{
+    width: 80%;
+}
+input[type=submit]{
+    margin-left: 100px;
+}
 }
  
 /* Small phones to small tablets */
 @media only screen and (max-width: 767px){
+ .grid-container{
+     grid-template-columns: 1fr;
+ }
+ .content{
+     grid-template-columns: 1fr;
+ }
+ .container{
+     grid-template-columns: 1fr;
+ }
+ .abc{
+     grid-template-columns: 1fr;
+ }
+  .main-nav{
+      visibility: hidden;
+  }
+  .logo{
+      width: 350px;
+      margin-left: 10%;
+  }
+  h1{
+      word-spacing: 2px;
+      font-size: 250%;
+  }
+  .heading-main-box{
+      transform: translate(-20%, -50%);
+  }
+  .about-picture{
+      text-align: center;
+  }
+  .about-picture img{
+      width: 70%;
+  }
+  .about-section .row .belong{
+      font-size: 20px;
+  }
+  .picture-title{
+      font-size: 25px;
+  }
+  .product-box .btn{
+     margin-left: 30%;
+  }
+  .product-box{
+      border-radius: 20px;
+      margin-bottom: 20px;
+  }
+  .product-section{
+      text-align: center;
+  }
   
+  .testimonials-section .container .quote{
+      margin-bottom: 20px;
+  }
+  figcaption{
+    visibility: hidden;
+  }
+  form{
+      margin-left: 10%;
+  }
+  label{
+      margin-left: 35%;
+  }
+  input[type=submit]{
+      margin-left: 80px;
+      text-align: center;
+  }
+  .icon{
+      text-align: center;
+  }
+  .information li{
+      font-size: 20px;
+  }
 }
  
 /* Small phones from 0 to 480px; */
 @media only screen and (max-width: 480px){
-   
- 
+   html{
+    font-size: 12px;
+    }
+    .logo{
+        margin-left: 10px;
+        padding-top: 50px;
+        width: 200px;
+        }
+    .btn{
+        margin-left: 20px;
+    }
+    .heading-main-box {
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    .product-box .btn{
+        margin-left: 60px;
+    }
+    .icon{
+        font-size: 10px;
+    }
+    form{
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 2%;
+    }
 }
